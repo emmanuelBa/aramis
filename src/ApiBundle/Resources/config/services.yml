@@ -1,0 +1,3 @@
+parameters:
+    test.client.class : Tests\ApiBundle\Client
+

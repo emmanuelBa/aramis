@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="ApiBundle\Entity\Car" table="car">
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="maker" type="string" column="maker" length="50" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="model" type="string" column="model" length="50" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="price" type="decimal" column="price" precision="10" scale="2" nullable="false"/>
+    <field name="createdAt" type="datetime" column="created_at" nullable="false"/>
+    <field name="updatedAt" type="datetime" column="updated_at" nullable="false"/>
+    <one-to-many field="option" target-entity="Option" mapped-by="car">
+        <cascade>
+            <cascade-persist/>
+        </cascade>
+    </one-to-many>
+    <one-to-many field="equipment" target-entity="Equipment" mapped-by="car" cascade="persist">
+        <cascade>
+            <cascade-persist/>
+        </cascade>
+    </one-to-many>
+    <lifecycle-callbacks>
+        <lifecycle-callback type="prePersist" method="prePersist"/>
+        <lifecycle-callback type="preUpdate" method="preUpdate"/>
+    </lifecycle-callbacks>
+  </entity>
+</doctrine-mapping>

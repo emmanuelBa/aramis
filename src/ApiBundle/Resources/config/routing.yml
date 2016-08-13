@@ -1,0 +1,40 @@
+#All cars list
+cars_get : 
+    path:  /cars
+    defaults: { _controller: ApiBundle:Car:getCars}
+    methods : [GET]
+
+#Get a car
+car_get : 
+    path:  /car/{id}
+    defaults: { _controller: ApiBundle:Car:getCar}
+    methods : [GET]
+    requirements:
+        id: '\d+'
+
+#Create a car
+car_create : 
+    path:  /car
+    defaults: { _controller: ApiBundle:Car:createCar}
+    methods : [POST]
+
+
+#Replace a car
+car_replace : 
+    path:  /car/{id}
+    defaults: { _controller: ApiBundle:Car:replaceCar}
+    methods : [PUT]
+
+#Update a car
+car_update : 
+    path:  /car/{id}
+    defaults: { _controller: ApiBundle:Car:updateCar}
+    methods : [PATCH]
+
+#Delete a car
+car_delete : 
+    path:  /car/{id}
+    defaults: { _controller: ApiBundle:Car:deleteCar}
+    methods : [DELETE]
+    requirements:
+        id: '\d+'
