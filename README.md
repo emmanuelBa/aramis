@@ -15,7 +15,7 @@ The purpose to handle a basic list of cars.
 
 2. Install project : 
 
-`php composer.phar create-project emmanuel-ba/aramis aramis -dev`
+`php composer.phar create-project emmanuel-ba/aramis aramis -sdev`
 
 
 3. Create database:
