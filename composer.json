@@ -1,5 +1,5 @@
 {
-    "name": "manu/sf3",
+    "name": "emmanuel-ba/aramis",
     "license": "proprietary",
     "type": "project",
     "autoload": {
@@ -29,8 +29,7 @@
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "^2.0",
         "friendsofsymfony/rest-bundle": "@dev",
-        "jms/serializer-bundle": "@dev",
-        "nelmio/api-doc-bundle": "@dev"
+        "jms/serializer-bundle": "@dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
