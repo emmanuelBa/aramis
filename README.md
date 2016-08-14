@@ -12,6 +12,7 @@ The purpose to handle a basic list of cars.
 
 1. Choose your favorite way to [get composer](https://getcomposer.org/download/).
 
+> database credentials should be asked during installation
 
 2. Install project : 
 
