@@ -16,9 +16,9 @@ The purpose is to handle a basic list of cars.
 
 2. Install project : 
 
-`php composer.phar create-project emmanuel-ba/aramis aramis -sdev`
+ `php composer.phar create-project emmanuel-ba/aramis aramis -sdev`
 
-> database credentials should be asked during installation
+ *database credentials should be asked during installation*
 
 3. Create database:
 
@@ -29,22 +29,22 @@ The purpose is to handle a basic list of cars.
  > php bin/console doctrine:schema:update --force
 
 
-> you can alternatively use the mysql dump file provided (aramis.sql).
+ *you can alternatively use the mysql dump file provided (aramis.sql).*
 
 
 4. Load fixtures :
 
-`php bin/console doctrine:fixtures:load`
+ `php bin/console doctrine:fixtures:load`
 
 5. Launch tests with phpunit: 
 
-`phpunit`
+ `phpunit`
 
 6. Start PHP's built-in web server using Symfony Command :
 
-`php bin/console server:run`
+ `php bin/console server:run`
 
-> Api should be available at http:localhost:8000
+ *Api should be available at http:localhost:8000*
 
 ----
 # Test API
