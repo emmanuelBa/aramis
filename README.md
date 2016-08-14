@@ -5,10 +5,12 @@
 
 
 > A REST API developed using Symfony 3.1 , FosRestBundle and JMSSerializerBundle.
-The purpose to handle a basic list of cars.
+The purpose is to handle a basic list of cars.
 
 ----
 ## Installation
+
+*Make sure MySQL and PHP >=5.5.9 are installed.*
 
 1. Choose your favorite way to [get composer](https://getcomposer.org/download/).
 
